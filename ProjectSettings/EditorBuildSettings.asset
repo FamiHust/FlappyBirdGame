@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu/MainMenu.unity
+    guid: 116de491839c7584892075ce37192863
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_1.unity
+    guid: 4abfd998cb182104e8afd5d8f55ccc12
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu/SelectLevel.unity
+    guid: 1ca89e4510d44cc45ba701a357cac1f0
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_2.unity
+    guid: 5a2f8fe344dc1734aa2b83c5dc1b928f
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_3.unity
+    guid: 0ae9f25811b9abb4b936668b32f0709a
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_4.unity
+    guid: b286622ba6265e949ad1bcbd3010181a
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_5.unity
+    guid: 5aabacd9adfc7264aabb8b50648dde2a
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_6.unity
+    guid: 1438eaa6d960eca46a511403da057c8a
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_2.unity
+    guid: c02cb13a92cba1c41aab609a67f86104
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_3.unity
+    guid: 36b405104f899c4419623deb35b8c4a3
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_4.unity
+    guid: 01c8236511da6e74a9ee4aabbc5b9dbe
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_5.unity
+    guid: cef1c9bf74abc1444a2d134c79adeda0
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_6.unity
+    guid: b32a52bb44730c2458730cee80a03e25
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_7.unity
+    guid: 6d59e28686da0ee42ae7f7051bfb7b1d
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_8.unity
+    guid: 31cfef81ae809ec498996889e1b879bf
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_9.unity
+    guid: dd01e47d174d9b04a981e798f650027f
+  - enabled: 1
+    path: Assets/Scenes/SelectCharacterLevel/Level_10.unity
+    guid: c65a4a2f2a5a0c34db1f5de6b1854fd3
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_7.unity
+    guid: 615fa25308504c243a70f685c3ed82a6
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_8.unity
+    guid: cfbe7ef951be79248b20ec0c6537f9ec
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_9.unity
+    guid: 817dd3a0dabfe1f4e9f444f4176e8b5f
+  - enabled: 1
+    path: Assets/Scenes/LevelInterface/PlayGame_10.unity
+    guid: 9ed08dbd5928df843af1f64119cafe9a
+  m_configObjects: {}
