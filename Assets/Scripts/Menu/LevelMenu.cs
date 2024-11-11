@@ -7,10 +7,9 @@ public class LevelMenu : MonoBehaviour
 {
     public Button[] buttons;
     public GameObject levelButtons;
-    public GameObject[] locks; 
+    public GameObject[] locks;
 
-
-    private void Awake() 
+    private void Awake()
     {
         ButtonToArray();
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);

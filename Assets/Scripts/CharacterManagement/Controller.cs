@@ -20,7 +20,7 @@ public class Controller : MonoBehaviour
     public GameObject gameStartObj;
     public TextMeshProUGUI coinsText;
     [SerializeField] private int level;
-    
+
     // [SerializeField] private float speed = 5f;
     [SerializeField] private float rotationSpeed = 10f;
     private int characterIndex;
@@ -42,8 +42,8 @@ public class Controller : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        } 
-        
+        }
+
     }
 
     void Start()
@@ -58,7 +58,7 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinsText.text = "COIN : " + numCoin;
+        coinsText.text = numCoin.ToString();
         player.Update();
 
         if (isGameOver)
@@ -76,7 +76,7 @@ public class Controller : MonoBehaviour
             audioManager.PlayVFX(audioManager.wingClip);
             GameStart();
         }
-        
+
     }
 
     // protected void FixedUpdate() 
@@ -115,13 +115,13 @@ public class Controller : MonoBehaviour
     {
         SceneManager.LoadScene("level_" + level.ToString());
     }
-    
+
     public void GameOver()
     {
         //gameOverObj.SetActive(true);
         audioManager.PlayVFX(audioManager.hitClip);
     }
-    
+
     // public void OnCollisionEnter2D(Collision2D collision)
     // {
     //     player.GameOver();

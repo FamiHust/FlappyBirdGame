@@ -21,10 +21,10 @@ public class CharacterSelect : MonoBehaviour
 
     private void Awake()
     {
-        
+
         foreach (UnlockCharacter c in unlockCharacters)
         {
-            if(c.price == 0)
+            if (c.price == 0)
                 c.isUnlocked = true;
             else
             {
@@ -55,7 +55,7 @@ public class CharacterSelect : MonoBehaviour
 
     public void OnPrevButtonClick()
     {
-        if(index > 0)
+        if (index > 0)
         {
             index--;
         }
@@ -67,7 +67,7 @@ public class CharacterSelect : MonoBehaviour
 
     public void OnNextButtonClick()
     {
-        if(index < characters.Length - 1)
+        if (index < characters.Length - 1)
         {
             index++;
         }
@@ -81,7 +81,7 @@ public class CharacterSelect : MonoBehaviour
     {
         for (int i = 0; i < characters.Length; i++)
         {
-            if(i == index)
+            if (i == index)
             {
                 characters[i].GetComponent<SpriteRenderer>().color = Color.white;
                 selectedCharacter = characterPrefabs[i];
@@ -110,8 +110,8 @@ public class CharacterSelect : MonoBehaviour
 
     public void UpdateUI()
     {
-        coinsText.text = "COINS : " + PlayerPrefs.GetInt("NumCoin", 0);
-        if(unlockCharacters[index].isUnlocked == true)
+        coinsText.text = PlayerPrefs.GetInt("NumCoin", 0).ToString();
+        if (unlockCharacters[index].isUnlocked == true)
             unlockButton.gameObject.SetActive(false);
         else
         {
@@ -128,7 +128,7 @@ public class CharacterSelect : MonoBehaviour
             }
         }
     }
-    
+
     public void Unlock()
     {
         int coins = PlayerPrefs.GetInt("NumCoin", 0);
@@ -138,6 +138,6 @@ public class CharacterSelect : MonoBehaviour
         PlayerPrefs.SetInt("Index", index);
         unlockCharacters[index].isUnlocked = true;
         UpdateUI();
-        
+
     }
 }

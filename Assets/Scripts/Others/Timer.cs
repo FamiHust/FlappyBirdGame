@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
 
     public GameObject WinPanel;
     private bool stopTimer;
-    
+
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -87,6 +87,7 @@ public class Timer : MonoBehaviour
     {
         SceneManager.LoadScene("level_" + level.ToString());
     }
+
 
     public void StopTimer()
     {

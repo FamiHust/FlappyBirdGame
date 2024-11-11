@@ -12,12 +12,12 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI currentScore;
     private TextMeshProUGUI highScore;
 
-    private void Awake() 
+    private void Awake()
     {
-       if (instance == null)
-       {
-        instance = this;
-       }
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
     private void Start()
@@ -25,22 +25,22 @@ public class Score : MonoBehaviour
         currentScore.text = score.ToString();
 
         // highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
-        UpdateHighScore();
+        //UpdateHighScore();
     }
 
-    private void UpdateHighScore()
-    {
-        if (score > PlayerPrefs.GetInt("HighScore"))
-        {
-            PlayerPrefs.SetInt("HighScore", score);
-            highScore.text = score.ToString();
-        }
-    }
+    // private void UpdateHighScore()
+    // {
+    //     if (score > PlayerPrefs.GetInt("HighScore"))
+    //     {
+    //         PlayerPrefs.SetInt("HighScore", score);
+    //         highScore.text = score.ToString();
+    //     }
+    // }
 
     public void addScore()
     {
         score++;
         currentScore.text = score.ToString();
-        UpdateHighScore();
+        //UpdateHighScore();
     }
 }
