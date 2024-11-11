@@ -1554,7 +1554,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2760346101725793398, guid: eeb2a45b58e84cc43a34df7687166924, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 787393305}
   m_SourcePrefab: {fileID: 100100000, guid: eeb2a45b58e84cc43a34df7687166924, type: 3}
 --- !u!114 &787393301 stripped
 MonoBehaviour:
@@ -1583,6 +1586,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &787393304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2760346101725793398, guid: eeb2a45b58e84cc43a34df7687166924, type: 3}
+  m_PrefabInstance: {fileID: 787393300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &787393305
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787393304}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97c4bd85f0fa84f4384d0a9bc6d7e35e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!224 &818574660 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6156004030085387940, guid: a5c41b2b097b72740964f0ab838a9d76, type: 3}
@@ -4849,7 +4878,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2411338165643142474, guid: f90e311285e3349498b900777e7e33f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.9
+      value: 9.83
       objectReference: {fileID: 0}
     - target: {fileID: 2411338165643142474, guid: f90e311285e3349498b900777e7e33f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5098,7 +5127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8134118163285834371, guid: 5d7bc2fc6bbccee4b846c07b2d0848c1, type: 3}
       propertyPath: maxTime
-      value: 2.5
+      value: 2.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5649,7 +5678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5634671306376064977, guid: d59239b891c100a44a03bc3fa56edcf9, type: 3}
       propertyPath: maxTime
-      value: 2.5
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 8374828580964101658, guid: d59239b891c100a44a03bc3fa56edcf9, type: 3}
       propertyPath: m_Name
