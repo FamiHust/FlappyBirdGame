@@ -8,7 +8,6 @@ public class CharacterController : MonoBehaviour
     {
         if (collision.transform.tag == "Obstacles")
         {
-            //Time.timeScale = 0;
             Controller.isGameOver = true;
             gameObject.SetActive(false);
 

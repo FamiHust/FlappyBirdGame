@@ -5,7 +5,6 @@ using UnityEngine;
 public class AddScore : MonoBehaviour
 {
     private AudioManager audioManager;
-
     
     private void Awake() 
     {

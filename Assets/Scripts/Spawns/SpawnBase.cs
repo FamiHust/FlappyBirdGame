@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class SpawnBase : MonoBehaviour
 {
-    public Base bases;
-    [SerializeField] private float maxTime;
     private float timer;
+    public Base bases;
+    
+    [SerializeField] private float maxTime;
 
     private void Start()
     {
         timer = maxTime;
     }
-    // Update is called once per frame
+
     void Update()
     {
         if (timer > maxTime)

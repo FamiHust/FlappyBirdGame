@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class CharacterSelect : MonoBehaviour
 {
-    private AudioManager audioManager;
-
-    private int index;
     [SerializeField] private int playGame;
+    private int index;
 
     public UnlockCharacter[] unlockCharacters;
     public Button unlockButton;
     public TextMeshProUGUI coinsText;
+    private AudioManager audioManager;
 
     [SerializeField] GameObject[] characters;
     [SerializeField] TextMeshProUGUI characterName;
     [SerializeField] GameObject[] characterPrefabs;
+
     public static GameObject selectedCharacter;
 
     private void Awake()
@@ -38,7 +38,6 @@ public class CharacterSelect : MonoBehaviour
 
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         index = 0;
@@ -138,6 +137,5 @@ public class CharacterSelect : MonoBehaviour
         PlayerPrefs.SetInt("Index", index);
         unlockCharacters[index].isUnlocked = true;
         UpdateUI();
-
     }
 }

@@ -9,6 +9,7 @@ public class SceneLoader : MonoBehaviour
     public GameObject loadingScreen;
     public Slider slider;
     public TextMeshProUGUI progressText;
+    
     public void LoadScene(int levelIndex)
     {
 
@@ -20,29 +21,24 @@ public class SceneLoader : MonoBehaviour
     IEnumerator LoadSceneAsynchronously(int levelIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(levelIndex);
-        operation.allowSceneActivation = false; // Ngăn không cho chuyển cảnh ngay lập tức
+        operation.allowSceneActivation = false;
 
         float startTime = Time.time;
-        float simulatedProgress = 0f; // Biến để làm mượt thanh tiến trình
+        float simulatedProgress = 0f; 
 
         while (!operation.isDone)
         {
-            // Tính toán tiến trình thực tế
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
-            simulatedProgress = Mathf.MoveTowards(simulatedProgress, progress, Time.deltaTime * 0.5f); // Điều chỉnh tốc độ cập nhật
+            simulatedProgress = Mathf.MoveTowards(simulatedProgress, progress, Time.deltaTime * 0.5f);
 
-            // Cập nhật thanh tiến trình
             slider.value = simulatedProgress;
 
-            // Cập nhật văn bản phần trăm
-            progressText.text = (simulatedProgress * 100f).ToString("F0") + "%"; // Hiển thị số phần trăm
+            progressText.text = (simulatedProgress * 100f).ToString("F0") + "%"; 
 
-            // Nếu quá trình tải hoàn tất và đã đủ thời gian tối thiểu
-            if (simulatedProgress >= 1f && Time.time - startTime >= 1f) // 1 giây tối thiểu
+            if (simulatedProgress >= 1f && Time.time - startTime >= 1f)
             {
-                operation.allowSceneActivation = true; // Chuyển cảnh
+                operation.allowSceneActivation = true;
             }
-
             yield return null;
         }
     }

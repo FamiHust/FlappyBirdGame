@@ -5,8 +5,6 @@ public abstract class Character
 {
     protected float speed {get; set;}
     protected float rotationSpeed {get; set;}
-    // protected GameObject gameStartObj {get; set;}
-    // protected GameObject gameOverObj {get; set;}
     protected AudioManager audioManager {get; set;}
 
 
@@ -35,11 +33,4 @@ public abstract class Character
     {
         transform.rotation = Quaternion.Euler(0, 0, rb.velocity.y * rotationSpeed);    
     }
-    
-    // public void GameOver()
-    // {
-    //     gameOverObj.SetActive(true);
-    //     Time.timeScale = 0;
-    //     audioManager.PlayVFX(audioManager.hitClip);
-    // }
 }

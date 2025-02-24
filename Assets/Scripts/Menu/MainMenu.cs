@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
     private AudioManager audioManager;
 
     private void Awake()
@@ -20,18 +19,8 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    // public void PlayGame()
-    // {
-    //     SceneManager.LoadScene(1);
-    // }
-
     public void QuitGame()
     {
         Application.Quit();
     }
-
-    // public void HighScoreScene()
-    // {
-    //     SceneManager.LoadScene(2);
-    // }
 }

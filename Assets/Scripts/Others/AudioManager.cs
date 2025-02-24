@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip hitClip;
     public AudioClip dieClip;
     public AudioClip winClip;
-    // Start is called before the first frame update
+
     void Start()
     {
         musicAudioSource.clip = musicClip;

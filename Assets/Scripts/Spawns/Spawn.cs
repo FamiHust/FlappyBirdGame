@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
+    private float timer;
     public Pipe pipe;
+
     [SerializeField] private float maxTime;
     [SerializeField] private float height;
-    private float timer;
 
     private void Start()
     {
@@ -26,5 +27,4 @@ public class Spawn : MonoBehaviour
         }
         timer += Time.deltaTime;
     }
-
 }
